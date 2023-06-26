@@ -1,0 +1,133 @@
+\documentclass{beamer}
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usetheme{AnnArbor}
+
+
+\title{Monty Hall Problem\footnote[1]{Source: You Tube - Numberphile}} 
+\author{Sarvagna Khatri - 202103029}
+
+
+
+
+\begin{document}
+
+
+\begin{frame}
+    \titlepage 
+\end{frame}
+
+The Monty Hall problem is a game in which there are \textbf{three} doors.
+Behind one of this three doors there is a car and goat behind the other two doors. The host knows that behind which door there is car or goat.\\
+\begin{figure}
+    \begin{center}
+    
+    \subfigure[Door 1]{ \includegraphics[width=0.3\textwidth]{car and door.png}}
+   \subfigure[Door 2]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+     \subfigure[Door 3]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+    
+    \end{center}
+    
+   
+    
+\end{figure}
+
+
+
+ We need to select one door of our choice(all doors are identical) and then Host reveals us one door behind which there is goat. Then he asks us to stick with our choice of door or switch to the other unopened door(Host cannot open the door we have selected). If we guessed the correct door behind which the car is located then we could win it.\\
+ 
+
+
+We would divide this problem in two parts, first if we would stick to our door, second if we would switch the door.\\
+\clearpage
+
+\begin{center}
+\textbf{First part: Stick to our chosen door}
+\end{center}
+
+$\Rightarrow$ \textbf{Case 1}: We choose the door behind which the car is located. The Host reveals the door other then the selected one and goat appears behind it. Host asks if we would like to switch. We don't switch our choice and host open the chosen door. Voila! We win car.
+\begin{figure}
+\begin{center}
+    
+
+   \subfigure[Door 1]{ \includegraphics[width=0.3\textwidth]{p n dc.png}}
+   \subfigure[Door 2]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+     \subfigure[Door 3]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+   \end{center}
+\end{figure}
+\clearpage
+
+$\Rightarrow$ \textbf{Case 2}: We choose the door behind which there is goat1. The Host reveals the door other then the selected one and goat2 appears behind it. Host asks if we would like to switch. We don't switch our choice and host open the chosen door. We win goat.
+\begin{figure}
+\begin{center}
+    
+
+   \subfigure[Door 1]{ \includegraphics[width=0.3\textwidth]{car and door.png}}
+   \subfigure[Door 2]{\includegraphics[width=0.3\textwidth]{p n dg.png}}
+     \subfigure[Door 3]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+   \end{center}
+\end{figure} 
+\clearpage
+$\Rightarrow$ \textbf{Case 3}: We choose the door behind which there is goat2. The Host reveals the door other then the selected one and goat1 appears behind it. Host asks if we would like to switch. We don't switch our choice and host open the chosen door. We win goat.
+\begin{figure}
+\begin{center}
+    
+
+   \subfigure[Door 1]{ \includegraphics[width=0.3\textwidth]{car and door.png}}
+     \subfigure[Door 2]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+     \subfigure[Door 3]{\includegraphics[width=0.3\textwidth]{p n dg.png}}
+   \end{center}
+\end{figure} 
+
+So we can see that there is $\frac{\textbf{1}}{\textbf{3}}$ chance of winning the car if we don't switch and there is $\frac{\textbf{2}}{\textbf{3}}$ chance of losing the car.\\
+\clearpage
+\begin{center}
+\textbf{Second part: Switch to other door}
+\end{center}
+
+$\Rightarrow$ \textbf{Case 1}: We choose the door behind which the car is located. The host opens the door other than selected one behind which there is goat. Then we switch our choice. We loose car.
+\begin{figure}
+\begin{center}
+    
+
+   \subfigure[Door 1]{ \includegraphics[width=0.38\textwidth]{Switch car.png}}
+     \subfigure[Door 2]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+     \subfigure[Door 3]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+   \end{center}
+\end{figure} 
+
+$\Rightarrow$ \textbf{Case 2}: We choose the door behind which there is goat1. The host cannot open the door behind which car is located so he is forced to open only remaining door which have goat2 behind it. Then we switch our choice. We win car!!
+\begin{figure}
+\begin{center}
+    
+
+   \subfigure[Door 1]{ \includegraphics[width=0.3\textwidth]{car and door.png}}
+     \subfigure[Door 2]{\includegraphics[width=0.38\textwidth]{Switch goat.png}}
+     \subfigure[Door 3]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+   \end{center}
+\end{figure} 
+
+
+$\Rightarrow$ \textbf{Case 3}: We choose the door behind which there is goat2. The host cannot 
+open the door behind which car is located so he is forced to open only remaining door which have goat1 behind it. Then we switch our choice. We win car!!
+\begin{figure}
+\begin{center}
+    
+
+   \subfigure[Door 1]{ \includegraphics[width=0.3\textwidth]{car and door.png}}
+   \subfigure[Door 3]{\includegraphics[width=0.38\textwidth]{Switch goat.png}}
+     \subfigure[Door 2]{\includegraphics[width=0.3\textwidth]{d n g.png}}
+      
+   \end{center}
+\end{figure} 
+
+
+
+
+
+So we can see that there is $\frac{\textbf{2}}{\textbf{3}}$ chance of winning the car if we switch our choice and there is $\frac{\textbf{1}}{\textbf{3}}$ chance of losing car.\\
+
+So now we can conclude from above two parts that there is higher probability of winning car if we switch our choice. So to maximize our winning chances we should always switch.
+
+\end{document}
